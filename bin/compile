@@ -18,7 +18,7 @@ function indent() {
 cd $BUILD_DIR
 
 # configure
-if [ -f configure ]; then
+if [ -f CMakeLists.txt ]; then
   echo "-----> Configuring"
   cmake -G"Unix Makefiles" 2>&1 | indent
 fi
